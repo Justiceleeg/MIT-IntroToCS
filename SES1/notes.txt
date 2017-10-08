@@ -1,0 +1,26 @@
+Chapters 1 and 2.1 Notes
+
+Chapter 1:
+What is meant by computational thinking?
+-All knowledge can be thought of as either declarative or imperative
++Declarative Knowledge is composed of statements of fact.
+.."the square root of x is a number such that y*y=x"; does not tell us how to find a sqrt
++Imperative Knowledge is "how to" knowledge, or recipes for deducing information
+
++Algorithm is a description of the method (the sequence of steps) towards finding a solution
+..Formally: an algorithm is a finite list of instructions that describe a computatio
+..that when executed on a provided set of inputs will proceed through a set of well-defined
+..states and eventually produce an output
+
++Earliest computing machines were Fixed-program computers, meaning they were designed to do
+..very specific things: compute trajectories, break codes, add/subtract to change the program
+..one has to replace the circuitry
++The first truly modern computer was the stored-program computer. Such a computer stores (and
+..manipulates) a sequence of instructions and has a set of elements that will execute any instruction
+..in that sequence. By creating a instruction-set architecture and detailing the computation as a sequence
+..of instructions (i.e. a program) makes a highly flexible machine. By treating those instructions the same way
+..as data, a stored-program machine cna easily change the program, and can do so under program control.
++The heart of the computer becomes a program (called an interpreter) that can execute any set of legal instructions
+
++Both the program and the data it manipulates reside in memory.
+

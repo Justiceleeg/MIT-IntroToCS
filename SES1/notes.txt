@@ -1,3 +1,11 @@
+Lecture Notes:
+type(3.0) returns float
+>>> type(4)
+int
+float(3) converts int 3 to float 3.0
+int(3.9) converts float 3.9 to int 3
+
+Book Notes:
 Chapters 1 and 2.1 Notes
 
 Chapter 1:
@@ -24,3 +32,82 @@ What is meant by computational thinking?
 
 +Both the program and the data it manipulates reside in memory.
 
++Different languages are better or worse for different kinds of applications.
+..MATLAB is an excellent language for manipulating vectors and matrices.
+..C is a good language for writing the programs that control data networks.
+..PHP is a good language for building Websites.
+..Python is a good general-purpose language.
+
++The primitive constructs in Python include:
+..literals : the number 3.2 and the string 'abc'
+..infix operators: +, /, - etc.
+
++The static semantics defines which syntactically valid strings have a meaning.
+
+Chapter 2:
+Programming languages:
++Low-level vs. High-level
+..refers to whether we program using instructions and data objects at the level 
+...of the machine (eg move 64 bits of data to this location from that location)
+..or whether we program using more abstract operations (eg pop up a menu on the 
+...screen) that have been provided by the language designer.
++General vs. targeted to an application domain
+..refers to whether primitive operations of the programming language are widely
+...available or are fine-tuned to a domain. Ex: Adobe Flash and Webpages vs. Excel
++Interpreted vs. compiled
+..refers to whether the sequence of instructions written by the programmer (source code)
+...is executed directly (by an interpreter) or whether it is first converted (by a compiler)
+....into a sequence of machine-level primitive operations.
+..Compiled languages usually produce programs that run more quickly and use less space
+
+Section 2.1: The Basic Elements of Python
++A Python program, sometimes called a script, is a sequence of definitions and commands.
+..These definitions are evaluated and the commands are executed by a Python interpreter
+...called a shell.
+
++A command, often called a statement, instructs the interpreter to do something.
+
+Section 2.1.1: Objects, Expressions, and Numerical Types
++Objects are the core things that Python programs manipulate.
+..Every object has a type that defines the kinds of things that programs can do with objects of that type.
+
++Types are either scalar or non-scalar.
+..Scalar types are indivisible. Non-scalar objects, ex: strings, have internal structure.
+
+Python has four types of scalar objects:
++int is used to represent integers. Ex: 3, 5, -2000
++float is used to represent real numbers. Literals of type float always include a decimal point 
+..(can also use scientific notation)
++bool is used to represent the Boolean values True and False.
++None is a type with a single value.
+
+Operators on types int and float:
+i+j, i-j, i*j, i%j
+i/j --- Always returns a float
+i//j --- integer division; always returns an int
+i**j --- i^j if both are int returns an int; if one+ is a float returns a float
+also <, >, <=, >=, !=
+
+Operators on type bool are:
+a and b --- True only if both are true
+a or b --- True if a is true, b is true, or both
+not a --- True if a is False
+
+Section 2.1.2: Variables and Assignment
++Variables provide a way to associate names with objects.
++In Python, variable names can contain uppercase and lowercase letters, digits
+..(but they cannot start with a digit), and the special character _
++Case sensitive
++Reserved Words (aka keywords):
+and, as, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from,
+global, if, import, in, is, lamda, not, or, pass, print, raise, return, try, with, while, yield
+
+#Comments enhance readability
+
++Python allows multiple assignment: x, y = 2, 3 >>> x=2, y=3
+..convenient because it allows you to use multiple assignment to swap the bindings of two variables:
+x, y = 2, 3
+x, y = y, x
+will make x=3, and y=2
+
+Section 2.1.3 IDLE (Integrated Development Environment)
